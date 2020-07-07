@@ -1,0 +1,9 @@
+{
+  "typescript.format.semicolons": "remove",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescriptHero.imports.insertSemicolons": false,
+  "typescriptHero.imports.organizeOnSave": true,
+  "editor.formatOnSave": true,
+  "tslint.autoFixOnSave": true
+}
