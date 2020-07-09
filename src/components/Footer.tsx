@@ -1,12 +1,26 @@
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
+import { Container, Link, Typography } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
 import React from 'react'
 
-const Header: React.FC = () => (
-  <div style={{ background: 'blue' }}>
-    <Container>
-      <Typography variant="h4">Footer</Typography>
+const useStyles = makeStyles((theme) => ({
+  footer: { padding: theme.spacing(2) },
+}))
+
+const Footer = () => {
+  const classes = useStyles()
+
+  return (
+    <Container className={classes.footer}>
+      <Typography variant="body2" color="textSecondary" align="center">
+        {'Copyright © '}
+        <Link color="inherit" href="/">
+          Your Website
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
     </Container>
-  </div>
-)
-export default Header
+  )
+}
+
+export default Footer

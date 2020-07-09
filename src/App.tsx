@@ -1,7 +1,5 @@
-import CssBaseline from '@material-ui/core/CssBaseline'
-import { createMuiTheme } from '@material-ui/core/styles'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
-import ThemeProvider from '@material-ui/styles/ThemeProvider'
+import { CssBaseline, useMediaQuery } from '@material-ui/core'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import React, { useMemo } from 'react'
 import { hot } from 'react-hot-loader/root'
 

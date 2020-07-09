@@ -8,7 +8,7 @@ app.get('/api/*', (req, res) => {
   res.json({ data: 'api' })
 })
 
-app.get('/*', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, '../build', 'index.html'))
 })
 
